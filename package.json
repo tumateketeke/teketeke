@@ -1,0 +1,24 @@
+{
+  "name": "web",
+  "version": "0.0.1",
+  "description": "The TekeTeke Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com.nj3ma/teketeke"
+  },
+  "keywords": [
+    "delivery",
+    "site",
+    "geospatial"
+  ],
+  "author": "Mwaoshe Njemah",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3",
+    "express3-handlebars": "^0.5.2"
+  }
+}
