@@ -16,7 +16,9 @@ app.get('/', function(req,res){
 });
 
 app.get('/about',function(req,res){
-	res.render('about');
+	var randomToday =
+	today[Math.floor( Math.random() * today.length)];
+	res.render('about',{today : randomToday});
 });
 
 app.use (function(req,res){
@@ -37,3 +39,10 @@ app.listen(app.get('port'), function(){
 	console.log('Express started on http://localhost:') +
 		app.get ('port') + ('; Press Ctrl +C to terminate');
 })
+
+var today = [
+		"It's friday, Grab A Movie.",
+		"It's Monday send Flowers.",
+		"Never a better day to surprise someone with movie tickets than Tuesday!"
+	];
+
