@@ -1,5 +1,6 @@
 var express = require('express');
 
+var today = require ('./lib/today.js')
 var app = express();
 
 var handlebars = require('express3-handlebars')
@@ -17,9 +18,7 @@ app.get('/', function(req,res){
 });
 
 app.get('/about',function(req,res){
-	var randomToday =
-	today[Math.floor( Math.random() * today.length)];
-	res.render('about',{today : randomToday});
+	res.render('about',{today : today.getToday()});
 });
 
 app.use (function(req,res){
@@ -41,9 +40,4 @@ app.listen(app.get('port'), function(){
 		app.get ('port') + ('; Press Ctrl +C to terminate');
 })
 
-var today = [
-		"It's friday, Grab A Movie.",
-		"It's Monday send Flowers.",
-		"Never a better day to surprise someone with movie tickets than Tuesday!"
-	];
 

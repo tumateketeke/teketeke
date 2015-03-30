@@ -1,0 +1,5 @@
+#Ignore packages installed by npm
+node_modules
+#Ignore temp files
+*.swap, *.swap* 
+
