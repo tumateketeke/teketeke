@@ -1,0 +1,65 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/moshe/.nvm/v0.10.32/bin/node',
+1 verbose cli   '/home/moshe/.nvm/v0.10.32/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'mocha' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'mocha', null ]
+6 verbose cache add name=undefined spec="mocha" args=["mocha",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'mocha',
+7 verbose parsed url   path: 'mocha',
+7 verbose parsed url   href: 'mocha' }
+8 silly lockFile a619da43-mocha mocha
+9 verbose lock mocha /home/moshe/.npm/a619da43-mocha.lock
+10 silly lockFile a619da43-mocha mocha
+11 silly lockFile a619da43-mocha mocha
+12 verbose addNamed [ 'mocha', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile b9899f31-mocha mocha@
+15 verbose lock mocha@ /home/moshe/.npm/b9899f31-mocha.lock
+16 silly addNameRange { name: 'mocha', range: '*', hasData: false }
+17 verbose request where is /mocha
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 019f94523b343317
+20 verbose url raw /mocha
+21 verbose url resolving [ 'https://registry.npmjs.org/', './mocha' ]
+22 verbose url resolved https://registry.npmjs.org/mocha
+23 verbose request where is https://registry.npmjs.org/mocha
+24 info trying registry request attempt 1 at 17:42:11
+25 http GET https://registry.npmjs.org/mocha
+26 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+27 info trying registry request attempt 2 at 17:42:21
+28 http GET https://registry.npmjs.org/mocha
+29 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+30 info trying registry request attempt 3 at 17:43:41
+31 http GET https://registry.npmjs.org/mocha
+32 silly lockFile b9899f31-mocha mocha@
+33 silly lockFile b9899f31-mocha mocha@
+34 error network getaddrinfo ENOTFOUND
+34 error network This is most likely not a problem with npm itself
+34 error network and is related to network connectivity.
+34 error network In most cases you are behind a proxy or have bad network settings.
+34 error network
+34 error network If you are behind a proxy, please make sure that the
+34 error network 'proxy' config is set properly.  See: 'npm help config'
+35 error System Linux 3.17.4-301.fc21.x86_64
+36 error command "/home/moshe/.nvm/v0.10.32/bin/node" "/home/moshe/.nvm/v0.10.32/bin/npm" "install" "--save-dev" "mocha"
+37 error cwd /home/moshe/src/node/teketeke/web
+38 error node -v v0.10.32
+39 error npm -v 1.4.28
+40 error syscall getaddrinfo
+41 error code ENOTFOUND
+42 error errno ENOTFOUND
+43 verbose exit [ 1, true ]

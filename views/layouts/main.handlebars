@@ -2,9 +2,12 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
 		<title> t e k e t e k e | stuff you need. delivered. fast.</title>
-		<link rel="stylesheet" href="css/styles.css" type="text/css" >
+		    {{#if showTests}}
+            <link rel = "stylesheet" href = "/vendor/mocha.css" >
+            {{/if}}
+        <script src ="//code.jquery.com/jquery-2.0.2.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css" type="text/css" >
 		</head>
-
 <body>
 
 	<nav>
@@ -32,7 +35,19 @@
 	    
         Built with love in Nairobi, Kenya
 	</footer>
-
-
+    {{#if showTests}}
+        <div id ="mocha"></div>
+        <script src = "/vendor/mocha.js"></script>
+        <script src = "/vendor/chai.js"></script>
+            <script>
+                mocha.ui('tdd');
+                var assert = chai.assert;
+            </script>
+            <script src = "/qa/tests-global.js"></script>
+            {{#if pageTestScript}}
+                <script src="{{pageTestScript}}"></script>
+            {{/if}}
+        <script> mocha.run();</script>
+    {{/if}}
 </body>
 </html>
